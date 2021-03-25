@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#eaa023, #e96e13);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#24caac, #24caac);
+}
+
+/*Magic Selection*/
+
+*::selection {
+  background-color: white;
+  color: black;
+}
+
+:root {
+  --main-color: #24caac;
+  --color-1: #eaa023;
+  --color-2: #e96e13;
+  --dark-800: #24292d;
+  --dark-700: #2f363e;
+  --white-900: #ffffff;
+  --white-800: rgba(255, 255, 255, 0.8);
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
